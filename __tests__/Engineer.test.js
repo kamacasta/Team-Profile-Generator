@@ -10,4 +10,14 @@ test('create engineer object', () => {
     expect(employee.role)===(expect.any(String));
 })
 
+// test github
+test("add github and getGithub method will return an employee's github", () => {
+    const
+});
+
+//test role
+test("add role getRole method will return an employee's role", () => {
+    const
+});
+
 
