@@ -40,7 +40,7 @@ test("add github and getGithub method will return an engineer's github", () => {
     // const github = "kamacasta@github.io
     const engineer = new Engineer("kamakanui", 131822, "kamacasta983@gmail.com")
     expect(engineer.getGithub())===(expect.any(String))
-})
+});
  
 
 // test for role
