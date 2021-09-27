@@ -36,6 +36,7 @@ test("add id and getEmail method will return an employee's email", () => {
 
 // test for role
 test("add role and getRole method will return an employee's role", () => {
+    // const role = "Employee"
     const employee = new Employee("kamakanui", 131822, "kamacasta983@gmail.com")
     expect(employee.getRole())===(expect.any(String))
 })

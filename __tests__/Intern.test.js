@@ -5,6 +5,7 @@ test('create intern object', () => {
     const intern = new Intern();
     expect(typeof intern).toBe("object");
 
+    // expect a String or Number based on the property
     expect(intern.name)===(expect.any(String));
     expect(intern.id)===(expect.any(Number));
     expect(intern.email)===(expect.any(String));

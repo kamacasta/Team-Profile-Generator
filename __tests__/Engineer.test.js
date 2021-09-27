@@ -45,6 +45,7 @@ test("add github and getGithub method will return an engineer's github", () => {
 
 // test for role
 test("add role and getRole method will return an engineer's role", () => {
+    // const role = "Engineer"
     const engineer = new Engineer("kamakanui", 131822, "kamacasta983@gmail.com")
     expect(engineer.getRole())===(expect.any(String))
 })
