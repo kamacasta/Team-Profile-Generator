@@ -16,4 +16,23 @@ const teamArray = [];
 
 // inquirer used to prompt users 
 
-const managerQuestions
+// manager 
+
+const managerQuestions = [
+    {
+        type: "input",
+        message: "Please enter the manager's name (Shift Leader ...etc).",
+        name: "name",
+        // validating the input given from the user
+        validate: (appInput) => {
+            // if statement for if the input is true input is valid
+            if (appInput) {
+                return true;
+            } else {
+            // if the input is not valid 
+            console.log("Please enter a valid name for the manager (Shift Leader ...etc).")
+            return false;
+            }
+            },
+        },
+]
