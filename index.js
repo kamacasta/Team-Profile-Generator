@@ -61,13 +61,31 @@ const managerQuestions = [
         type: "input",
         message: "Please enter the manager's email address.",
         name: "email",
-        //  validating a number was inputed
+        //  validating a String was inputed
         validate: (appInput) => {
             if (appInput) {
                 return true;
             } else {
                 // if the input is not valid 
                 console.log("Please enter the manager's email address.")
+                return false;
+            }
+        }
+    },
+
+    // Prompt for manager github
+
+    {
+        type: "input",
+        message: "Please enter the manager's GitHub account.",
+        name: "github",
+        //  validating a String was inputed
+        validate: (appInput) => {
+            if (appInput) {
+                return true;
+            } else {
+                // if the input is not valid 
+                console.log("Please enter the manager's GitHub account.")
                 return false;
             }
         }
