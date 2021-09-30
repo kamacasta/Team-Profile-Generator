@@ -16,7 +16,7 @@ const teamArray = [];
 
 // inquirer used to prompt users 
 
-// manager 
+// manager questions
 
 const managerQuestions = [
     
@@ -90,4 +90,161 @@ const managerQuestions = [
             }
         }
     },
+];
+
+// Engineers questions
+
+const engineerQuestions = [
+
+      // Prompt for manager name
+      {
+        type: "input",
+        message: "Please enter the name of the engineer!",
+        name: "name",
+        // validating the input given from the user
+        validate: (appInput) => {
+            // if statement for if the input is true input is valid
+            if (appInput) {
+                return true;
+            } else {
+            // if the input is not valid 
+            console.log("Please enter the name of the engineer!")
+            return false;
+            }
+            },
+        },
+
+    // Prompt for manager id number
+    {
+        type: "input",
+        message: "Please enter the ID number associated with the engineer",
+        name: "id",
+        //  validating a number was inputed
+        validate: (appInput) => {
+            if (appInput) {
+                return true;
+            } else {
+                // if the input is not valid 
+                console.log("Invalid characters used please make sure they are numbers! ")
+                return false;
+            }
+        }
+    },
+
+    // Prompt for manager email
+    
+    {
+        type: "input",
+        message: "Please enter the engineer's email address.",
+        name: "email",
+        //  validating a String was inputed
+        validate: (appInput) => {
+            if (appInput) {
+                return true;
+            } else {
+                // if the input is not valid 
+                console.log("")
+                return false;
+            }
+        }
+    },
+
+    // Prompt for manager github
+
+    {
+        type: "input",
+        message: "Please enter the engineer's GitHub account.",
+        name: "github",
+        //  validating a String was inputed
+        validate: (appInput) => {
+            if (appInput) {
+                return true;
+            } else {
+                // if the input is not valid 
+                console.log("Please enter the engineer's GitHub account.")
+                return false;
+            }
+        }
+    },
+
+]
+
+// Intern questions 
+
+const internQuestions = [
+
+    // prompt for intern name
+    {
+        type: "input",
+        message: "Please enter the name of the intern.",
+        name: "name",
+        //  validating a String was inputed
+        validate: (appInput) => {
+            if (appInput) {
+                return true;
+            }else {
+                // if the input is not valid 
+                console.log("Please enter the name of the intern!")
+                return false
+            }
+            },
+        },
+        
+        // prompt for intern id number
+
+        {
+            type: "input",
+            message: "Please enter the ID number associated with the intern.",
+            name: "name",
+            //  validating a String was inputed
+            validate: (appInput) => {
+                if (appInput) {
+                    return true;
+                }else {
+                    // if the input is not valid 
+                    console.log("Invalid characters used please make sure they are numbers!")
+                    return false
+                }
+                },
+            },
+
+            // prompt for intern email address
+            
+            {
+                type: "input",
+                message: "Please enter the intern's email address.",
+                name: "name",
+                //  validating a String was inputed
+                validate: (appInput) => {
+                    if (appInput) {
+                        return true;
+                    }else {
+                        // if the input is not valid 
+                        console.log("Please enter the intern's email address")
+                        return false
+                    }
+                    },
+                },
+
+                // prompt for intern school they attend
+
+                {
+                    type: "input",
+                    message: "Please enter the school name the intern attends.",
+                    name: "name",
+                    //  validating a String was inputed
+                    validate: (appInput) => {
+                        if (appInput) {
+                            return true;
+                        }else {
+                            // if the input is not valid 
+                            console.log("Please enter the school name the intern attends.")
+                            return false
+                        }
+                        },
+                    },
+        
+    
+
+        
 ]
