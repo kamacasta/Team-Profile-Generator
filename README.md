@@ -17,9 +17,9 @@ AS A manager I WANT to generate a webpage that displays my team's basic info SO 
 
 ## Installation
 
-To install the Team-Profile-Generator please make sure to:
-``` install node ``` (https://nodejs.org/en/download/)
-``` npm i inquirer ```
+To install the Team-Profile-Generator please make sure to:<br />
+``` install node ``` (https://nodejs.org/en/download/)<br />
+``` npm i inquirer ```<br />
 ``` npm install --save-dev jest ```
 
 ## Technologies
