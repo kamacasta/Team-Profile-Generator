@@ -12,7 +12,7 @@ const Intern = require("./lib/Intern");
 
 // empty array for team information
 
-const teamArray = [];
+const teammateArray = [];
 
 // inquirer used to prompt users
 
@@ -264,4 +264,5 @@ const addEmployeeToTeam = [
     }
 ];
 
+// check ReadME
 
